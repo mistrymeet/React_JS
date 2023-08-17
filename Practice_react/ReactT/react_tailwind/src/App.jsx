@@ -25,6 +25,12 @@ import MapData from './MapAndBootStrapCard/MapData'
 import InputStore from './Input/InputStore'
 import InputUpdate from './Input/InputUpdate'
 import MultipleInputForm from './InputForm/MultipleInputForm'
+import BootLayout from './Page/BootLayout'
+import NavBar from './Project/Components/NavBar'
+import Api1 from './Api/Api1'
+import Api2 from './Api/Api2'
+import Api3 from './Api/Api3'
+import Context from './Contrex/Context'
 
 export default class App extends Component {
   render() {
@@ -70,7 +76,13 @@ export default class App extends Component {
         {/* <InputStore /> */}
         {/* <InputUpdate /> */}
 
-        <MultipleInputForm />
+        {/* <BootLayout /> */}
+        {/* <MultipleInputForm /> */}
+        {/* <NavBar /> */}
+        {/* <Api1 /> */}
+        {/* <Api3 /> */}
+        <Context />
+
       </div>
     )
   }
