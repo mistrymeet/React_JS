@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Question 1: What is React Js?
 Answer :
         The React.js framework is an open-source JavaScript framework and library developed by Facebook. It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
@@ -92,3 +93,99 @@ Answer :
 
             
 
+=======
+Question 1: What is React Js?
+Answer :
+        The React.js framework is an open-source JavaScript framework and library developed by Facebook. It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
+
+        In React, you develop your applications by creating reusable components that you can think of as independent Lego blocks. These components are individual pieces of a final interface, which, when assembled, form the application’s entire user interface. 
+
+Question 2: What is NPM in React Js?
+Answer :
+        npm is an abbreviation used for the node package manager. It is a package manager for JavaScript. It is the default package manager that comes with NodeJS when you install it. It consists of a command-line interface and an online database of public packages and private packages that are paid which is called the npm Registry.
+
+Question 3: What is Role of Node Js in react Js?
+Answer : 
+        NodeJS is a framework of JavaScript which is mainly used for working with the backend of our application or building the backend using JavaScript, whereas ReactJS is a JavaScript front-end library. It is mainly used for building the user interface or the frontend of our application.
+
+Question 4: What is CLI command In React Js?
+Answer :
+        There are two way to create react app and both has different command
+        (1) create react app by npx
+        ==>>>
+             npx create-react-app <react-app-name>
+             npx create-react-app hello-react-app
+
+        (2) create react app by react vite
+        ==>> 
+             $ npm create vite@latest
+             npm create vite@latest my-vue-app --template vue
+
+             npx degit user/project my-project
+             cd my-project
+
+             npm install
+             npm run dev
+
+Question 5:  What is Components in React Js?
+Answer :
+        A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier. You can see a UI broken down into multiple individual pieces called components and work on them independently and merge them all in a parent component which will be your final UI. 
+
+Question 6: • What is Header and Content Components in React Js?
+Answer :
+         header is a section at the top of a page that displays site name and navigation while content componet is component where we display crousal,product, description and much more..
+
+Question 7: How to install React Js on Windows, Linux Operating System? How to Install NPM and How to check version of NPM?
+Answer :
+        Install React js by npx
+           - Open a terminal(Windows Command Prompt or PowerShell).
+           - Create a new project folder
+           - Install React using create-react-app, a tool that installs all of the dependencies to build and run a full React.js application: (npx create-react-app my-app)
+           - This will first ask for your permission to temporarily install create-react-app and it's associated packages. Once completed, change directories into your new app ("my-app" or whatever you've chosen to call it): cd my-app.
+           - Start your new React app: (npm start)
+
+        Install React js by vite 
+             $ npm create vite@latest
+             npm create vite@latest my-vue-app --template vue
+
+             npx degit user/project my-project
+             cd my-project
+
+             npm install
+             npm run dev
+
+        Install NPM 
+             Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions.
+             to download the latest version of npm, on the command line, run (npm install -g npm)
+
+        Checking your version of npm
+             To see if you already have Node.js and npm installed and check the installed version, run the following commands:
+
+             node -v
+             npm -v
+
+Question 8: How to check version of React Js?
+Answer : 
+        To check which React version is your project using you need to open the package.json. Take a look under the dependencies section. It should list all of the dependencies of your project and one of those should be React.
+
+        "dependencies": {
+          "@testing-library/jest-dom": "^5.16.2",
+          "@testing-library/react": "^12.1.4",
+          "@testing-library/user-event": "^13.5.0",
+          "react": "^17.0.2",
+          "react-dom": "^17.0.2",
+          "react-scripts": "5.0.0",
+          "web-vitals": "^2.1.4"
+        }
+
+Question 9: How to change in components of React Js?
+Answer : 
+        We have to set initial state value inside constructor function and set click event handler of the element upon which click, results in changing state. Then pass the function to the click handler and change the state of the component inside the function using setState.
+
+
+
+            
+
+            
+
+>>>>>>> 8e6e78ef395eb5f3cdaeede1a76afffda9310946
