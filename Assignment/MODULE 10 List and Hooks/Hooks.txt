@@ -1,0 +1,69 @@
+Q.1 Explain Life cycle in Class Component and functional component with Hooks
+A.1 ("https://i.imgur.com/PVPr1dK.jpg")
+
+=> A React component undergoes three phases in its lifecycle: mounting, updating, and unmounting. 
+
+1. The mounting phase is when a new component is created and inserted into the DOM or, in other words, when the life of a component begins. This can only happen once, and is often called “initial render.”
+
+2. The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when the state is updated. This phase can occur multiple times, which is kind of the point of React.
+
+3. The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(1) The mounting phase :
+    In the mounting phase, a component is prepared for and actually inserted into the DOM. To get through this phase, four lifecycle methods are called: constructor, static getDerivedStateFromProps, render, and componentDidMount.
+
+    => The constructor method :
+The constructor method is the very first method called during the mounting phase.
+
+    => The static getDerivedStateFromProps method :
+Props and state are completely different concepts, and part of building your app intelligently is deciding which data goes where.
+
+    => The render method :
+The render method is the only required method for a class-based React component. It’s called after the getDerivedStateFromProps method and actually renders or inserts the HTML to the DOM.
+
+    => The componentDidMount method :
+componentDidMount is the last lifecycle method called in the mounting phase. It’s called right after the component is rendered or mounted to the DOM.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(2) The updating phase :
+    The Updating phase is triggered when component props or state change, and consists of the following methods: static getDerivedFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, and componentDidUpdate.
+
+    The methods getDerivedFromProps and render are also part of the mounting phase. Since they’ve been covered previously, this section focuses on the other three methods.
+
+    => The static getDerivedStateFromProps :
+In the update phase, the first lifecycle method called is getDerivedStateFromProps. This method is useful if you have updated props and you want to reflect that in the component's state.
+
+    => The shouldComponentUpdate method :
+shouldComponentUpdate is another rarely used lifecycle method. It’s specifically intended for performance optimization, and basically lets you tell React when you don't need to re-render when a new state or props comes in. While it can help avoid re-renders, you shouldn’t rely on it to prevent re-renders since you might skip a necessary update and encounter bugs.
+
+    => The render method :
+The render method is the only required method for a class-based React component. It’s called after the getDerivedStateFromProps method and actually renders or inserts the HTML to the DOM.
+
+    => The getSnapshotBeforeUpdate method :
+The getSnapshotBeforeUpdate method gives you access to the previous props and state of the component before it's updated. This allows you to work or check on the previous values of the state or props. It’s another method that’s rarely used.
+
+    => The componentDidUpdate Method :
+The componentDidUpdate method is the last lifecycle method invoked in the update phase. It allows you to create side effects like sending network requests or calling the this.setState method. It’s important to remember that there should always be a way to avoid the setState (like some sort of logic), or it will result in an infinite loop of re-rendering.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(3) The unmounting phase :
+The unmounting phase is the third and final phase of a React component. At this phase, the component is removed from the DOM. Unmounting only has one lifecycle method involved: componentWillUnmount.
+
+    => The componentWillUnmount Method :
+componentWillUnmount is invoked right before the component is unmounted or removed from the DOM. It’s meant for any necessary clean up of the component, like unsubscribing to any subscriptions (i.e., Redux) or canceling any network requests. Once this method is done executing, the component will be destroyed.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* The two most common default hooks are useState and useEffect. The useState hook gives state to the functional component, and useEffect allows you to add side effects within it (like after initial render), which aren’t allowed within the function's main body. You can also act upon updates on the state with useEffect.
+
+* React has released more default hooks, but useState and useEffect are the ones you should be most familiar with. Let’s take a look at how they work and compare them to the component lifecycle we covered above.
+
+    => useState :
+The useState hook is used to store state for a functional component. This hook accepts one parameter: initialState, which will be set as the initial stateful value, and returns two values: the stateful value, and the update function to update the stateful value. The update function accepts one argument, newState, which replaces the existing stateful value.
+
+    => useEffect :
+As with the render() method of a class-based component, the main body of a functional component should be kept pure. With the useEffect hook, you're able to create side effects while maintaining the component's purity. Within this hook, you can send network requests, make subscriptions, and change the state value.
