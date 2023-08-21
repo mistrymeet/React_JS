@@ -31,6 +31,7 @@ import Api1 from './Api/Api1'
 import Api2 from './Api/Api2'
 import Api3 from './Api/Api3'
 import Context from './Contrex/Context'
+import Mforminput from './InputForm/Mforminput'
 
 export default class App extends Component {
   render() {
@@ -81,7 +82,8 @@ export default class App extends Component {
         {/* <NavBar /> */}
         {/* <Api1 /> */}
         {/* <Api3 /> */}
-        <Context />
+        {/* <Context /> */}
+        <Mforminput />
 
       </div>
     )
