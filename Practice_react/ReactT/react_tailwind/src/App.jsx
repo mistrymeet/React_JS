@@ -32,6 +32,10 @@ import Api2 from './Api/Api2'
 import Api3 from './Api/Api3'
 import Context from './Contrex/Context'
 import Mforminput from './InputForm/Mforminput'
+import UseReducer from './UseReducer/UseReducer'
+// import Routes from './Route/RouteS'
+// import RouteS from './Route/RouteS'
+import RouteRev from './ProtectedRoute/RouteRev'
 
 export default class App extends Component {
   render() {
@@ -83,7 +87,12 @@ export default class App extends Component {
         {/* <Api1 /> */}
         {/* <Api3 /> */}
         {/* <Context /> */}
-        <Mforminput />
+        {/* <Mforminput /> */}
+        {/* <RouteR /> */}
+        {/* <Routess /> */}
+        {/* <UseReducer /> */}
+        {/* <RouteS /> */}
+        <RouteRev />
 
       </div>
     )
