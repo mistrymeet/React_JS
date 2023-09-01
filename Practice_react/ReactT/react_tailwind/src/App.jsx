@@ -36,6 +36,7 @@ import UseReducer from './UseReducer/UseReducer'
 // import Routes from './Route/RouteS'
 // import RouteS from './Route/RouteS'
 import RouteRev from './ProtectedRoute/RouteRev'
+import AdminRoute from './Admin_User/AdminRoute'
 
 export default class App extends Component {
   render() {
@@ -92,7 +93,8 @@ export default class App extends Component {
         {/* <Routess /> */}
         {/* <UseReducer /> */}
         {/* <RouteS /> */}
-        <RouteRev />
+        {/* <RouteRev /> */}
+        <AdminRoute />
 
       </div>
     )
